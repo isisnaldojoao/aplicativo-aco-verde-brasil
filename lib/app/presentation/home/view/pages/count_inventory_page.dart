@@ -108,7 +108,7 @@ class _CountInventoryPageState extends ConsumerState<CountInventoryPage>
                       if ((p0?.length ?? 0) > 33) {
                         return 'UD pode ter no máximo 33 caracteres.';
                       }
-                      if (int.tryParse(p0) == null) {
+                      if (int.tryParse(p0!) == null) {
                         return 'Nº UD incorreto, insira um número válido.';
                       }
                       if (recentUDRecords.contains(p0!)) {
